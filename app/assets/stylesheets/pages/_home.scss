@@ -23,8 +23,7 @@
   }
 
   img {
-    height: 40vh;
-    object-fit: cover;
+    // height: 40vh;
   }
 }
 
@@ -39,9 +38,6 @@
 
 .cabinet-imgs {
   background-color: rgba($color: $green, $alpha: 0.2);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 @media(min-width: 992px) {
