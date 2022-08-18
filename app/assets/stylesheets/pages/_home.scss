@@ -41,12 +41,6 @@
   background-color: rgba($color: $green, $alpha: 0.2);
 }
 
-@media(min-width: 992px) {
-  .home-text {
-    text-align: center;
-  }
-}
-
 @media(min-width: 768px) {
   .home-content {
     div p {
