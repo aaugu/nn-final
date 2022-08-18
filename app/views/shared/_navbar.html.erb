@@ -1,0 +1,27 @@
+<nav class="sticky bg-green">
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+    <i class="fas fa-bars"></i>
+  </label>
+  <label>
+    <%= link_to root_path do %>
+      <div class="logo d-flex align-items-center">
+        <%= image_tag "logo-psy.png" %>
+      </div>
+    <% end %>
+  </label>
+  <ul class="">
+    <li>
+      <%= link_to "Bienvenue", root_path, class: "active" %>
+    </li>
+    <li>
+      <%= link_to "A propos", about_path %>
+    </li>
+    <li>
+      <%= link_to "Actualités", "#" %>
+    </li>
+    <li class="nav-contact" id="contact-button">
+      <%= link_to "Contact", contact_path, class: "bold" %>
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,49 @@
+<div class="footer">
+  <div class="footer-contact-data d-flex justify-content-around align-items-center">
+
+    <div class="footer-infos xs-hidden">
+      <div class="footer-access-map">
+        <%= link_to contact_path(anchor: "map") do %>
+          <div class="h-100 d-flex flex-column align-items-center">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <p class="mb-0">Plan d'accès</p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="vertical-bar xs-hidden"></div>
+
+    <div class="footer-infos xs-hidden">
+      <p><strong>Naomi Nilsson</strong></p>
+      <p>Cabinet de Psychothérapie de la Palud</p>
+      <p>Place de la Palud 7</p>
+      <p>1003 Lausanne</p>
+    </div>
+
+    <div class="vertical-bar xs-hidden"></div>
+
+    <div class="footer-infos footer-logo d-flex justify-content-between">
+      <%= link_to "https://www.psychologie.ch/fr" do %>
+        <div class="d-flex align-items-center">
+          <%= image_tag "logo-fsp.png" %>
+        </div>
+      <% end %>
+      <%= link_to "https://www.psy-vd.ch/" do %>
+        <div class="d-flex align-items-center">
+          <%= image_tag "logo-avp.png" %>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="vertical-bar"></div>
+
+    <div class="footer-infos d-flex justify-content-center text-center align-items-center" id="contact-button">
+      <%= link_to "CONTACT", contact_path, class: "bold" %>
+    </div>
+  </div>
+
+  <div class="copyright-bar d-flex justify-content-center align-items-center"><%  %>
+    <p>Copyright 2022 naomi-nilsson.ch | Tous droits réservés | Développé par Anaïs Augu</p>
+  </div>
+</div>
