@@ -1,2 +1,90 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner text-center d-flex align-items-center justify-content-center">
+  <h1 class="col-7 col-sm-8 col-lg-12">
+    <span class="banner-title">Naomi Nilsson</span><br><br>
+    Psychologue & Psychothérapeute FSP
+  </h1>
+</div>
+
+<div class="header py-3">
+  <div></div>
+  <%= image_tag "logo-titles.png", class: "logo-title" %>
+  <h1 class="text-center mx-2">BIENVENUE</h1>
+  <%= image_tag "logo-titles.png", class: "logo-title"%>
+  <div></div>
+</div>
+
+<div class="row">
+  <p class="w-75 text-center mx-auto mb-5 col-12 col-sm-11 col-md-10 col-lg-9">
+    Bienvenue, si vous visitez ce site parce que vous êtes à la recherche d’un thérapeute j’espère que ces quelques lignes vous éclaireront sur ma manière de travailler.<br><br>
+    Mon cabinet se trouve au centre ville de Lausanne, sur la place de la Palud, près de son horloge et de la fontaine de la justice.<br><br>
+    Je pratique la psychothérapie d’orientation systémique et suis également formée en psychotraumatologie et en EMDR.
+  </p>
+</div>
+
+<div class="header w-50">
+  <div></div>
+  <h2 class="text-center mx-3">ACCOMPAGNEMENT</h2>
+  <div></div>
+</div>
+
+<div class="home-content row align-items-center mb-5">
+  <%= image_tag "IMG_6149.png", class: "col-12 col-md-3" %>
+  <div class="d-flex align-items-center col-12 col-md-6">
+    <p class="justify-text py-3 w-75 m-auto">
+      Entamer une démarche psychothérapeutique c’est un peu comme les baignades en eau froides, il faut du temps, pour trouver le bon environnement, le bon équipement et surtout le bon moment pour commencer. Et il se peut qu’on n’aime pas ça et qu’une autre manière de faire convienne mieux.
+    </p>
+  </div>
+  <%= image_tag "IMG_4461.jpeg", class: "col-12 col-md-3" %>
+</div>
+
+<div class="content-container py-2 row">
+  <p class="justify-text m-auto home-text col-12 col-sm-11 col-md-10 col-lg-7">
+    La psychothérapie c’est aller explorer son fonctionnement psychique en exposant son histoire ou les situations de vie quotidienne qui sont devenues problématiques. Un.e psychothérapeute va accompagner son patient à prendre conscience de son fonctionnement et le questionner afin de l’amener à envisager des fonctionnements alternatifs.<br>
+    C’est un chemin pour retrouver son autonomie.<br><br>
+    Les manifestations d’une souffrance psychique peuvent prendre différentes formes, symptômes dépressifs, anxiété, troubles du sommeil, troubles du comportement alimentaire, hallucinations… tous ces éléments sont des indicateurs d’une souffrance, ou d’un conflit interne, comme par exemple entre ce que l’on veut et ce que l’on fait…
+  </p>
+</div>
+
+<div class="home-content row align-items-center mb-5">
+  <%= image_tag "balisage-pedestre-02.jpeg", class: "col-12 col-md-3" %>
+  <div class="d-flex align-items-center col-12 col-md-6">
+    <p class="justify-text py-3 w-75 m-auto">
+      La métaphore qui me vient souvent est celle de la randonnée, vous voyez ces petits panneaux jaunes qu’il faut suivre pour arriver à destination, un peu comme un jeu de piste ? Pour moi la démarche psychothérapeutique est un peu similaire, c’est-à-dire qu’ensemble nous allons partir à la recherche de ces petits panneaux ou signes, afin de vous accompagner à la destination que vous souhaitez.
+    </p>
+  </div>
+  <%= image_tag "balisage-pedestre-03.jpeg", class: "col-12 col-md-3" %>
+</div>
+
+<div class="header w-50">
+  <div></div>
+  <h2 class="text-center mx-3">APPROCHES</h2>
+  <div></div>
+</div>
+
+<div class="content-container row">
+  <div class="psy-card col-12 col-lg-6 mb-5">
+    <%= image_tag "logo-systemique.png", class: "psy-logo" %>
+    <p class="justify-text">
+      En psychothérapie il y a différentes approches, les plus connues sont l’approche psychoanalytique, l’approche cognitivo-comportementale (TCC) et l’approche systémique. Cette dernière est celle que je pratique.<br><br>
+      Elle consiste à considérer la personne comme faisant partie d’un système (familial, professionnel, amical ou de manière plus large social) et de chercher à la comprendre à travers ses relations au sein de ce système.<br><br>
+      Les thérapeutes de cette approche sont aussi formés à la thérapie familiale et à la thérapie de couple.<br><br>
+      Il s’agit d’une approche dynamique, créative et interactive, où le thérapeute est au même niveau que le patient. Pour une définition plus exhaustive vous pouvez aller visiter le site de la fédération suisse des psychologues&nbsp;
+      <%= link_to '<i class="fa-solid fa-arrow-up-right-from-square"></i>'.html_safe, "https://www.psychologie.ch/fr/psychotherapie" %>
+    </p>
+  </div>
+
+  <div class="psy-card col-12 col-lg-6 mb-5">
+    <%= image_tag "logo-psychotraumatologie.png", class: "psy-logo" %>
+    <p class="justify-text">
+      Pour ce qui est de la psychotraumatologie, c’est une approche qui considère que beaucoup de symptômes sont liés à des événements potentiellement traumatiques, des évènements adverses, des négligences ou des maltraitances, et essaie de faire le lien entre les symptômes et le vécu de la personne, un peu comme s’il s’agissait de blessures à guérir.<br><br>
+      Un des moyens pour atténuer les conséquences des traumatismes et permettre à la personne de vivre sa vie pleinement est l’EMDR, (Eye Movement Desensitization Reprocessing). Il s’agit d’une technique qui vise à retraiter l’information contenue dans le souvenir grâce à des stimulations bilatérales qui vont activer des zones du cerveau spécifiques pour permettre ce retraitement. Pour plus d’information vous pouvez visiter le site EMDR Suisse&nbsp;
+      <%= link_to '<i class="fa-solid fa-arrow-up-right-from-square"></i>'.html_safe, "https://emdr-ch.org/fr/emdr/" %>
+    </p>
+  </div>
+</div>
+
+<div class="cabinet-imgs py-4">
+  <%= image_tag "IMG_4957.jpeg", class: "bubble about-img xs-hidden" %>
+  <%= image_tag "IMG_5998.png", class: "bubble about-img" %>
+  <%= image_tag "IMG_4956.jpeg", class: "bubble about-img xs-hidden" %>
+</div>

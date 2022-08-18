@@ -1,0 +1,69 @@
+<div class="general-container">
+  <div class="header">
+    <div></div>
+    <%= image_tag "logo-titles.png", class: "logo-title" %>
+    <h1 class="text-center mx-2">CONTACT</h1>
+    <%= image_tag "logo-titles.png", class: "logo-title" %>
+    <div></div>
+  </div>
+
+  <div class="content-container">
+
+    <div class="size-highlight mb-5 text-center">
+      <p>
+        Je travaille actuellement les lundis, jeudis et vendredis de 8h15 à 17h30.<br><br>
+        Dans l’immédiat (actualisé en août 2022) je n’ai pas de disponibilité pour de nouveaux suivis, mais il est toujours possible de me faire une demande par mail et que je vous contacte lorsqu’une place se libère.<br><br>
+        Si votre situation est urgente vous pouvez vous adresser aux urgences psychiatriques du CHUV ou à la centrale des médecins au <%= link_to "0 848 133 133", "tel:+41848133133" %>.
+      </p>
+    </div>
+
+    <h3 class="mb-4">Me joindre</h3>
+
+    <div class="contact-cards-container">
+      <div class="row">
+        <div class="contact-address col-xs-12 col-md-6">
+          <div class="contact-card-content d-flex align-items-center">
+            <p>
+              <strong>Addresse</strong><br>
+              Naomi Nilsson<br>
+              Cabinet de Psychothérapie de la Palud<br>
+              Place de la Palud 7<br>
+              1003 Lausanne
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-data col-xs-12 col-md-6">
+          <div class="contact-card-content d-flex flex-column justify-content-around">
+            <div class="mb-3">
+              <%= link_to "tel:+41774882823" do %>
+                <p><i class="fa-solid fa-phone"></i><strong> Par téléphone</strong></p>
+              <% end %>
+              +41 (0)77 488 28 23
+            </div>
+
+            <div>
+              <%= link_to "mailto:naomi.nilsson@psychologie.ch" do %>
+                <p><i class="fa-regular fa-envelope"></i><strong> Par e-mail</strong></p>
+              <% end %>
+              naomi.nilsson@psychologie.ch
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="mb-4">Accès</h3>
+
+    <div class="contact-access-container row justify-content-center align-items-center">
+      <div id="map" class="map-container col-12 col-md-7 mb-4">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2745.296270778311!2d6.630278815456697!3d46.52203887912781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c2e318873e329%3A0x67dc283a84938dda!2sPl.%20de%20la%20Palud%207%2C%201003%20Lausanne!5e0!3m2!1sfr!2sch!4v1656851056337!5m2!1sfr!2sch" style="width: 100%;height: 100%;border-radius:15px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="col-12 col-md-5">
+        <p class="contact-access-intro text-justify">Pour venir au cabinet en transports publics le métro m2 (arrêt Riponne Maurice-Béjart) est à 100 mètres, les arrêts de bus Bel-Air et Riponne sont aussi très proches.<br><br>Pour venir en voiture les parkings de la Riponne ou du Rôtillon sont tout proches également<br><br>Il n’y a malheureusement pas de places vélo sur la place même, mais des places sont disponibles à Bel-Air, et à la place Pépinet.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
