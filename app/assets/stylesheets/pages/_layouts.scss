@@ -4,6 +4,7 @@
 
 * {
 	margin: 0;
+  padding: 0;
 	text-decoration: none;
   list-style: none;
 }
@@ -13,7 +14,6 @@ html, body {
 	-webkit-font-smoothing: antialiased;
 	min-height: 100vh;
 	position: relative;
-  max-width: 100%;
 }
 
 a {
@@ -54,19 +54,18 @@ h1, h2 {
 .sticky {
 	position: fixed;
 	top: 0;
-	width: 100%;
+	max-width: 100%;
 }
 
 .header {
 	margin: 0 auto;
 	width: 80%;
-	display: flex;
-	justify-content: space-between;
+  display: flex;
 	align-items: center;
 	margin-bottom: 5vh;
 
 	h1 {
-		margin: 0;
+		margin: 0 auto;
 	}
 
 	div {
@@ -74,6 +73,10 @@ h1, h2 {
 		background-color: $green;
 		height: 1px;
 	}
+
+  h2 {
+    margin: 0 auto;
+  }
 }
 
 .size-highlight {
@@ -104,6 +107,16 @@ h1, h2 {
 @media(min-width: 993px) {
   .xs-hidden {
     display: block;
+  }
+
+  .header h2 {
+    margin: 0 2vw;
+  }
+
+  .subheader {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
   }
 
   .lg-hidden {

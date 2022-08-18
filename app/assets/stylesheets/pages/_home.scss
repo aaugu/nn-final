@@ -23,7 +23,8 @@
   }
 
   img {
-    // height: 40vh;
+    height: 40vh;
+    object-fit: cover;
   }
 }
 
@@ -43,5 +44,13 @@
 @media(min-width: 992px) {
   .home-text {
     text-align: center;
+  }
+}
+
+@media(min-width: 768px) {
+  .home-content {
+    div p {
+      padding: 2vh 0;
+    }
   }
 }
