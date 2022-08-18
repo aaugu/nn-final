@@ -1,0 +1,42 @@
+.contact-cards-container {
+  min-height: 20vh;
+  width: 100%;
+  margin-bottom: 6vh;
+}
+
+.contact-card-content {
+  height: 100%;
+  padding: 5vh 4vw 5vh 4vw;
+}
+
+.contact-data {
+  background-color: $light-yellow;
+}
+
+.contact-address {
+  background-color: $light-blue;
+}
+
+.contact-access-intro {
+  text-align: justify;
+}
+
+.map-container {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-container iframe {
+  left: 0;
+  top: 0;
+  // max-height: 500px;
+  position: absolute;
+}
+
+@media(min-width: 768px) {
+  .contact-access-intro {
+    padding-left: 4vw;
+  }
+}

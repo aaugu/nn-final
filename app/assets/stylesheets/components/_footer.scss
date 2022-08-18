@@ -1,0 +1,69 @@
+.footer {
+  font-size: 1.7vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-contact-data {
+  min-height: 15vh;
+  background-color: $green;
+  color: $light-gray;
+  padding: 1vh 2vw;
+}
+
+.footer-infos {
+  min-width: 18vh;
+  margin: 2vh 0;
+  padding: 0 2vw;
+}
+
+.footer-access-map {
+  .fa-map-location-dot {
+    font-size: 50px;
+    margin-bottom: 1.2vh;
+  }
+
+  p,
+  .fa-map-location-dot {
+    color: $light-gray;
+  }
+
+  a:hover {
+    font-weight: bold;
+  }
+}
+
+.footer-logo {
+  div img {
+    height: 10vh;
+    object-fit: contain;
+    margin: 0 2vw;
+  }
+}
+
+.vertical-bar {
+  background-color: $light-gray;
+  width: 1px;
+  height: 8vh;
+}
+
+.copyright-bar {
+  background-color: $deep-yellow;
+  text-align: center;
+
+  p {
+    font-size: 10px;
+    font-family: Helvetica, sans-serif;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-logo {
+    div img {
+      height: 8vh;
+      object-fit: contain;
+      margin: 0 2vw;
+    }
+  }
+}

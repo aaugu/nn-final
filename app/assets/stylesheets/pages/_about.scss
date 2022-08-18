@@ -1,0 +1,30 @@
+.justify-text {
+  text-align: justify;
+}
+
+.about-img {
+  height: 250px;
+  width: 250px;
+  object-fit: fill;
+  margin: 0 3vw 0 3vw;
+}
+
+.about-conclusion {
+  margin: 0 auto;
+}
+
+.about-text {
+  padding-bottom: 4vh;
+  padding-top: 3vh;
+}
+
+@media(min-width: 992px) {
+  .about-conclusion {
+    width: 80%;
+  }
+
+  .about-text {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+}

@@ -1,0 +1,114 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	text-decoration: none;
+  list-style: none;
+}
+
+html, body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	min-height: 100vh;
+	position: relative;
+  max-width: 100vw;
+}
+
+a {
+	text-decoration: none;
+}
+
+img, picture, video, canvas, svg {
+	display: block;
+	max-width: 100%;
+}
+
+input, button, textarea, select {
+	font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+p {
+	margin-bottom: 0;
+	font-size: 16px;
+}
+
+h1, h2 {
+	color: $green;
+}
+
+.content {
+	padding-bottom: 18vh;
+}
+
+.general-container {
+	padding-top: 15vh;
+	padding-bottom: 5vh;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.header {
+	margin: 0 auto;
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 5vh;
+
+	h1 {
+		margin: 0;
+	}
+
+	div {
+		flex-grow: 1;
+		background-color: $green;
+		height: 1px;
+	}
+}
+
+.size-highlight {
+	font-size: 1.1rem;
+}
+
+.content-container {
+	margin: 0 auto;
+	width: 80%;
+	height: 100%;
+	margin-bottom: 5vh;
+}
+
+@media(max-width: 992px) {
+  .xs-hidden {
+    display: none;
+  }
+
+  .lg-hidden {
+    display: block;
+  }
+}
+
+@media(min-width: 993px) {
+  .xs-hidden {
+    display: block;
+  }
+
+  .lg-hidden {
+    display: none;
+  }
+}
+
+@media(min-width: 1400px) {
+  .content-container {
+    width: 1200px;
+  }
+}
