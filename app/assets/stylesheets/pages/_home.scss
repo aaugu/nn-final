@@ -15,17 +15,28 @@
   margin-bottom: 2vh;
 }
 
-.home-content {
+.bg-light-green {
   background-color: rgba($color: $green, $alpha: 0.2);
+  height: 40vh;
+}
 
-  div {
-    margin: 0 auto;
-  }
+.home-imgs {
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
 
-  img {
-    height: 40vh;
-    object-fit: cover;
-  }
+.landscape-1 {
+  background-image: url('IMG_6149.png');
+}
+.landscape-2 {
+  background-image: url('IMG_4461.jpeg');
+}
+.balisage-1 {
+  background-image: url('balisage-pedestre-02.jpeg');
+}
+.balisage-2 {
+  background-image: url('balisage-pedestre-03.jpeg');
 }
 
 .psy-card {
@@ -37,14 +48,9 @@
   align-items: center;
 }
 
-.cabinet-imgs {
-  background-color: rgba($color: $green, $alpha: 0.2);
-}
 
 @media(min-width: 768px) {
-  .home-content {
-    div p {
-      padding: 2vh 0;
-    }
+  .home-text {
+    width: 60%;
   }
 }

@@ -126,6 +126,6 @@ h1, h2 {
 
 @media(min-width: 1400px) {
   .content-container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
