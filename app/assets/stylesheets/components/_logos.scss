@@ -8,3 +8,12 @@
   object-fit: contain;
   margin: 0 1vw;
 }
+
+@media(max-width: 576px) {
+  .logo-title {
+    display: none;
+  }
+  .header div {
+    display: none;
+  }
+}
