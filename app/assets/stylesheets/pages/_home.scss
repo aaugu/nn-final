@@ -5,6 +5,7 @@
   margin-bottom: 5vh;
 
   h1 {
+    font-family: "Roboto", "Helvetica", "sans-serif";
     color: $light-gray;
     text-shadow: 1px 1px 1px rgb(98, 97, 97);
   }
@@ -48,7 +49,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
 }
 
 @media(min-width: 768px) {
@@ -56,11 +56,7 @@
     width: 60%;
   }
 
-  .btw-img-text {
-    height: 50vh;
-  }
-
-  .home-imgs {
-    height: 50vh;
+  .psy-card {
+    margin: 0 auto;
   }
 }
