@@ -1,5 +1,5 @@
 <div class="general-container">
-  <div class="header">
+  <div class="header m-auto py-3 d-flex justify-content-between">
     <div></div>
     <%= image_tag "logo-titles.png", class: "logo-title" %>
     <h1 class="text-center mx-2">INFORMATIONS</h1>
@@ -7,19 +7,19 @@
     <div></div>
   </div>
 
-  <p class="justify-text w-75 mx-auto mb-4 col-12 col-sm-11 col-md-10 col-lg-9 change-justify-text">
+  <p class="justify-text w-75 mx-auto mb-4 change-justify-text">
     A partir du premier juillet 2022, le modèle de la prescription est entré en vigueur, qui permet au suivi d’être remboursé par l’assurance de base sur prescription d’un médecin généraliste, psychiatre ou pédiatre.<br><br>
     A priori cela ne devrait pas engendrer de changement pour les personnes qui passent par leur assurance complémentaire et souhaitent continuer de le faire.
   </p>
 
-  <p class="justify-text w-75 mx-auto mb-5 col-12 col-sm-11 col-md-10 col-lg-9 change-justify-text">
+  <p class="justify-text w-75 mx-auto mb-5 change-justify-text">
     Vous trouverez ici le modèle d’ordonnance à faire signer par votre médecin si vous souhaitez que votre suivi soit remboursé par la Lamal.&nbsp;
     <%= link_to '<i class="fa-solid fa-file-pdf"></i>'.html_safe, asset_path("ordonnance_psychologie_psychotherapie.pdf", format: :pdf), target: "_blank", class: "pdf-logo" %>
   </p>
 
-  <div class="header subheader">
-    <div class="xs-hidden"></div>
+  <div class="subheader">
+    <div></div>
     <h2 class="text-center">ACTUALITÉS</h2>
-    <div class="xs-hidden"></div>
+    <div></div>
   </div>
 </div>

@@ -7,13 +7,11 @@
   height: 6vh;
   object-fit: contain;
   margin: 0 1vw;
+  display: none;
 }
 
-@media(max-width: 576px) {
+@media(min-width: 450px) {
   .logo-title {
-    display: none;
-  }
-  .header div {
-    display: none;
+    display: block;
   }
 }
