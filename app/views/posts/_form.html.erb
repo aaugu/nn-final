@@ -1,8 +1,11 @@
-<div class="general-container m-auto">
+<div class="w-50 m-auto">
   <%= simple_form_for(post) do |f| %>
-    <%= f.input :title %>
-    <%= f.input :content %>
-    <%= f.input :url %>
-    <%= f.submit %>
+    <%= f.input :title,
+                label: "Titre" %>
+    <%= f.input :content,
+                label: "Description" %>
+    <%= f.input :url,
+                label: "Lien vers l'article" %>
+    <%= f.submit "Créer", class: "btn" %>
   <% end %>
 </div>

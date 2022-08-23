@@ -1,5 +1,14 @@
-<ul>
-  <% @posts.each do |post| %>
-    <li><%= link_to post.title, post_path(post) %></li>
+<div class="general-container">
+
+  <% if user_signed_in? %>
+    <%= button_to "Log out", destroy_user_session_path, method: :delete  %>
+  <% else %>
+    <%= link_to "Log in", new_user_session_path %>
   <% end %>
-</ul>
+
+  <ul>
+    <% @posts.each do |post| %>
+      <li><%= link_to post.title, post_path(post) %></li>
+    <% end %>
+  </ul>
+</div>

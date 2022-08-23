@@ -1,1 +1,12 @@
-<%= render "form", post: @post %>
+<div class="forms-container">
+
+  <div class="header">
+    <div></div>
+    <%= image_tag "logo-titles.png", class: "logo-title" %>
+    <h1 class="text-center mx-2">MODIFIER UN POST</h1>
+    <%= image_tag "logo-titles.png", class: "logo-title"%>
+    <div></div>
+  </div>
+
+  <%= render "form", post: @post %>
+</div>
