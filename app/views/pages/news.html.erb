@@ -22,4 +22,14 @@
     <h2 class="text-center">ACTUALITÉS</h2>
     <div></div>
   </div>
+
+  <div class="content-container">
+    <% @posts.each do |post| %>
+      <div class="container w-75 mb-5">
+        <p><%= post.title.upcase %></p>
+        <p><%= post.content %></p>
+        <%= link_to "Lien vers l'article", post.url %></p>
+      </div>
+    <% end %>
+  </div>
 </div>

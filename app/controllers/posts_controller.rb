@@ -1,66 +1,41 @@
 class PostsController < ApplicationController
   before_action :find_post, only: [:show, :edit, :update, :destroy]
+  before_action :is_admin?
 
   def index
     @posts = Post.all
   end
 
   def new
-    if is_admin?
-      @post = Post.new
-    else
-      flash.now[:notice] = "You are not authorized to perform this action."
-      redirect_to root_path
-    end
+    @post = Post.new
   end
 
   def create
-    if is_admin?
-      @post = Post.new(post_params)
-      @post.user = current_user
-      @post.save
-      if @post.save
-        redirect_to post_path(@post)
-      else
-        render :new, status: :unprocessable_entity
-      end
+    @post = Post.new(post_params)
+    @post.user = current_user
+    @post.save
+    if @post.save
+      redirect_to post_path(@post)
     else
-      not_authorized
-    end
-  end
-
-  def show
-    if is_admin?
-      not_authorized
+      render :new, status: :unprocessable_entity
     end
   end
 
   def edit
-    if is_admin?
-      not_authorized
-    end
   end
 
   def update
-    if is_admin?
-      @post.update(post_params)
-      if @post.save
-        redirect_to post_path(@post)
-      else
-        render :new, status: :unprocessable_entity
-      end
+    @post.update(post_params)
+    if @post.save
+      redirect_to post_path(@post)
     else
-      not_authorized
+      render :new, status: :unprocessable_entity
     end
   end
 
   def destroy
-    if is_admin?
-      @post.destroy
-      redirect_to posts_path, status: :see_other
-    else
-      not_authorized
-    end
+    @post.destroy
+    redirect_to posts_path, status: :see_other
   end
 
   private
@@ -74,11 +49,9 @@ class PostsController < ApplicationController
   end
 
   def is_admin?
-    signed_in? ? current_user.admin : false
-  end
-
-  def not_authorized
-    flash[:notice] = "You are not authorized to perform this action."
-    redirect_to root_path
+    unless current_user.admin
+      flash[:notice] = "You are not authorized to perform this action blabla."
+      redirect_to root_path
+    end
   end
 end

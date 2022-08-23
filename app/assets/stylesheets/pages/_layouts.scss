@@ -3,13 +3,13 @@
 }
 
 * {
-	margin: 0;
-  padding: 0;
-	text-decoration: none;
-  list-style: none;
 }
 
 html, body {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 	min-height: 100vh;
